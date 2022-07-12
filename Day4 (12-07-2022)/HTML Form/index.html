@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h2>Sign Up</h2>
+    <form action="/action_page.php"> <!--by including this action attribute, when u will submit all data will be recorded & sent to mwntioned page-->
+    <fieldset><legend>Name</legend>
+
+        <label for="firstname">
+            First Name:
+        </label>
+        <input type="text" id="firstname"><br>
+
+        <label for="lastname">
+            Last Name:
+        </label>
+        <input type="text" id="lastname"><br>
+
+    </fieldset>
+
+        <label for="dateofbirth">
+            Date of Birth
+        </label>
+        <input type="date" id="dateofbirth"><br>
+
+        <label for="email">
+            Email
+        </label>
+        <input type="email" id="email" value="abc@xyz.com"><br> <!--if u want any field should have default value then use value attribute-->
+
+        <label for="password">
+            Password
+        </label>
+        <input type="password" id="password"><br>
+
+        <label>Gender-</label><br>
+        <input type="radio" id="male" name="Gender">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="Gender">
+        <label for="female">Female</label><br>
+
+        <label>Hobbies-</label><br>
+        <input type="Checkbox" id="cricket" name="Hobbies">
+        <label for="cricket">Cricket</label>
+        <input type="Checkbox" id="badminton" name="Hobbies">
+        <label for="badminton">Badminton</label>
+        <input type="Checkbox" id="soccer" name="Hobbies">
+        <label for="soccer">Soccer</label><br>
+
+        <label for="file-select">Upload:</label>
+        <input type="file" id="file-select" name="Upload"><br>
+
+        <label for="address">Address</label>
+        <textarea rows="3" cols="5" name="address" id="address"></textarea><br>  <!--if u want to fix size area then use these attributes-->
+
+        <label for="city">City</label>
+        <select name="city" id="city">
+            <option value="sitapur">Sitapur</option>
+            <option value="lucknow">Lucknow</option>
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="banglore">Banglore----------------</option> <!--it will make slider size acc. to ur option size-->
+        </select><br>
+
+        <input type="button" value="Submit"><br>
+
+    </form>
+</body>
+</html>

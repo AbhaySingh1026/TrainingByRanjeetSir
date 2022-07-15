@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // window.onload = function() {
+        //     var canvas = document.getElementById("myFirstCanvas");
+        //     var context = canvas.getContext("2d"); 
+        //     // after this u can start drawing
+        //     //Draw Line -   
+        //     context.moveTo(10,20);                          //line starting coordinate(x,y)
+        //     context.lineTo(100, 20);                        //line ending coordinate(x,y)
+        //     context.stroke();
+        // };
+
+        // window.onload = function() {
+        // var canvas = document.getElementById("myFirstCanvas");
+        // var shape = canvas.getContext("2d");
+        // // after this u can start drawing
+        // //Draw Arc/Circle -
+        // shape.arc(150, 150, 80, 1.2 * Math.PI, 1.8 * Math.PI, false);  //(centerX, centerY, radius, startingAngle, endingAngle, counterclockwise);
+        // shape.stroke();
+        // };
+        
+        // window.onload = function() {
+        // var canvas = document.getElementById("myFirstCanvas");
+        // var context = canvas.getContext("2d");
+        // // after this u can start drawing
+        // //Draw Rectangle -
+        // context.rect(50, 50, 100, 50);                          //(x, y, width, height);
+        // context.stroke();
+        // };
+
+        // window.onload = function(){
+        //     var canvas = document.getElementById("myFirstCanvas");
+        //     var shape = canvas.getContext("2d");
+        //     //diff. shape inside one shape - 
+        //     shape.rect(50,50,100,50);
+        //     shape.arc(100,75,25,0,2*Math.PI,false);
+        //     shape.moveTo(75,75);
+        //     shape.lineTo(125,75);
+        //     shape.stroke();
+        // };
+
+        window.onload = function() {
+        var canvas = document.getElementById("myFirstCanvas");
+        var shape = canvas.getContext("2d");
+        shape.arc(100, 75, 50, 0, 2 * Math.PI, false);
+        shape.lineWidth = 10;                                                //border width
+        shape.strokeStyle = "orange";                                        //border color
+        shape.lineCap = "round";                                             //rounder corners
+        shape.fillStyle = "blue";                                            //color for filling
+        shape.fill();                                                        //fill                 
+        shape.stroke();
+        };
+    </script>
+    <style>
+        body{
+            background:orange;
+        }
+        /* By default canvas is borderless, colorless & size is 300 x 150 pixels */
+        canvas{                       
+            background: orangered;
+            border: 2px solid #000;
+            height: 400px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myFirstCanvas">
+
+    </canvas>
+</body>
+</html>

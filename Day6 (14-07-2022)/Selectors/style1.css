@@ -1,0 +1,38 @@
+/* descendant selector - */
+/* h1 em {
+    color: green;
+}
+ul.menu {
+    padding: 0;
+    list-style: none;
+} 
+ul.menu li{
+    display: inline;
+}
+ul.menu li a {
+    margin: 10px;
+    text-decoration: none;
+} */
+
+/* Group selector - */
+/* h1, p, div {
+    color: red;
+}
+table, th, td {
+    border: 5px solid;
+    border-collapse: collapse;
+} */
+
+/* Child selector - */
+/* div > p {
+    background-color: yellow;
+} */
+
+/* Adjacent sibling selector - */
+/* div + p{
+    background-color: brown;
+} */
+
+div ~ p{
+    background-color: yellow;
+}

@@ -1,0 +1,36 @@
+body{
+    background-color: antiquewhite;
+}
+table{
+    width: 100%;
+}
+table, th, td{
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+th{
+    background-color: brown;
+    color: white;
+}
+ol {
+    list-style-type: lower-alpha;
+    padding-left: 23px;
+}
+ol li{
+    margin-bottom: 2px;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 5px;
+    padding-left: 30px;
+    background-image: url("/img.jpeg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 25px;
+}
+ul {
+    padding-left: 10px;
+}
+td{
+    background-color: aqua;
+}

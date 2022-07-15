@@ -1,0 +1,59 @@
+body{
+    background-color: antiquewhite;
+}
+h1{
+    text-align: center;
+    color: yellow;
+    background-color: brown;
+}
+
+/* Table Css -  */
+/* table, th, td{
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+table{
+    width: 100%;
+}
+table th{
+    background-color: brown;
+    color: yellow;
+}
+td{
+    background-color:yellow;
+} */
+
+/* List Css -  */
+/*u can try upper & also u can apply any image here*/
+/* ul.a {
+    list-style-type: circle;
+}
+  ul.b {
+    list-style-type: square;
+}
+  ol.c {
+    list-style-type: upper-roman;
+}
+  ol.d {
+    list-style-type: lower-alpha;  
+} */
+
+ol {
+    background: #ff9999;
+    padding: 20px;
+} 
+ul {
+    background: #3399ff;
+    padding: 20px;
+} 
+ol li {
+    background: #ffe5e5;
+    color: blue;
+    padding: 5px;
+    margin-left: 35px;
+} 
+ul li {
+    background: #cce5ff;
+    color: darkblue;
+    margin: 5px;
+}

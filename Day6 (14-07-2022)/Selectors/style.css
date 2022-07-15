@@ -1,0 +1,24 @@
+/* Universal selector - code written inside this, will be applied to all elements i.e here it will apply on all h1 & all p*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Element selector - code written inside this, will be applied to all elements of a particular type i.e here it will be applied to all h1 tags*/
+h1{
+    color: brown;
+}
+
+/* Id selector - code written inside this, will only be applied on a spcific tag i.e here it will only be applied on 2nd p tag */
+#paragraph2{
+    text-align: center;
+}
+
+/* Class selector - code written inside this will be applied to all elements inside a particular class */
+/*u can group diff. type of tag inside on class & can apply css on all those tags at once by class, here type of tag doesn't matter*/
+.color{
+    color: red;
+}
+.firstParagraph{
+    color: blue;
+}

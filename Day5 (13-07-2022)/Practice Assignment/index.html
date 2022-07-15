@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: orange;
+        }
+        canvas{
+            border: 5px solid #d3d3d3;
+            background:orangered;
+        }
+    </style>
+    <script>
+        function playPause() { 
+        var myVideo = document.getElementById("video");
+        if (myVideo.paused) 
+            myVideo.play(); 
+        else 
+            myVideo.pause(); 
+        } 
+
+        function makeBig() { 
+            var myVideo = document.getElementById("video");
+            myVideo.width = 700; 
+        } 
+
+        function makeSmall() { 
+            var myVideo = document.getElementById("video");
+            myVideo.width = 200; 
+        } 
+
+        function makeNormal() { 
+            var myVideo = document.getElementById("video");
+            myVideo.width = 390;
+        }
+
+        window.onload = function(){
+            var canvas = document.getElementById("canvas");
+            var item = canvas.getContext("2d");
+            img = new Image();
+            window.setTimeout(function(){
+                item.drawImage(img,0,0,390,250);
+            },5000);
+            img.src = "https://th.bing.com/th/id/OIP.zi9fQV4mFU9dhtOKLie6WgHaEK?w=318&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7";
+        };
+        
+    </script>
+</head>
+<body>
+    <center>
+        <img src="https://th.bing.com/th/id/OIP.zi9fQV4mFU9dhtOKLie6WgHaEK?w=318&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="google Imgs" id="img" height="250" width="390">&emsp;
+        <canvas id="canvas" height="250" width="390">
+            Canvas is not supported by your browser.
+        </canvas><br><br>
+        <video id="video" height="250" width="390">
+            <source src="/video.mp4">
+            This video format is not supported by your browser.
+        </video><br>
+        <button onclick="playPause()">play/Pause</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+    </center>
+</body>
+</html>

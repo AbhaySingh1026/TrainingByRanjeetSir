@@ -1,0 +1,23 @@
+/* p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+} */
+
+/* p {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+div:hover p {
+    display:block;
+} */
+
+div {
+    background-color: green;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+div:hover {
+    background-color: blue;
+}

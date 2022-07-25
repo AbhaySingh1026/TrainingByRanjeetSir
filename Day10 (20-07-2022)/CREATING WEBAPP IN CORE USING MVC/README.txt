@@ -1,0 +1,1 @@
+just learned how to make web app in Asp dotnet core. Observed structure & files present in default app.
